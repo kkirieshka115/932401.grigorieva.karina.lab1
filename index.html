@@ -2,120 +2,38 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Григорьева Карина - Профиль</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе | Григорьева Карина</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             background-color: #e6f3ff;
-            margin: 0;
-        }
-        header {
-            background-color: #1a3a5c;
-            color: white;
-            padding: 20px;
-            overflow: hidden;
-        }
-        .photo {
-            float: left;
-            margin-right: 20px;
-            border: 3px solid #4da6ff;
-        }
-        header h1 {
-            margin: 0 0 10px 0;
-        }
-        .subtitle {
-            color: #b3d9ff;
-            margin-bottom: 15px;
-        }
-        .science-block {
-            background-color: #2a4a6c;
-            padding: 10px 15px;
-            border-left: 3px solid #4da6ff;
-        }
-        .science-block h3 {
-            color: #4da6ff;
-            margin: 0 0 5px 0;
-        }
-        .science-block p {
-            margin: 0;
-        }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        section, form {
-            background-color: white;
-            padding: 15px;
-            margin-bottom: 15px;
-            border: 1px solid #b3d9ff;
-        }
-        section h2, form h2 {
             color: #1a3a5c;
-            border-bottom: 1px solid #4da6ff;
-            padding-bottom: 5px;
-            margin-top: 0;
-        }
-        ul, ol {
-            padding-left: 25px;
-        }
-        li {
-            margin-bottom: 5px;
-        }
-        .form-group {
-            margin-bottom: 10px;
-        }
-        label {
-            display: block;
-            margin-bottom: 3px;
-            font-weight: bold;
-            color: #1a3a5c;
-        }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 95%;
-            padding: 5px;
-            border: 1px solid #b3d9ff;
-        }
-        textarea {
-            height: 80px;
-        }
-        button {
-            background-color: #1a3a5c;
-            color: white;
-            padding: 5px 15px;
-            border: none;
-            cursor: pointer;
-        }
-        footer {
-            background-color: #1a3a5c;
-            color: white;
-            text-align: center;
-            padding: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="photo.jpg" alt="Григорьева Карина" width="150" height="150" class="photo">
         <h1>Григорьева Карина</h1>
-        <div class="subtitle">Группа 932401 | Учёный и исследователь</div>
-        <div class="science-block">
-            <h3>АСТРОНОМИЯ</h3>
-            <p>Меня вдохновляет астрономия и я очень люблю звёзды.</p>
-        </div>
+        <p>Персональная страница: Учёный и исследователь</p>
     </header>
 
+    <hr>
+
     <main>
+        <section>
+            <h2>О себе</h2>
+            <img src="photo.jpg" alt="Фото Григорьевой Карины" width="150" height="150">
+            <p>Студентка группы 932401. Увлекаюсь астрономией и изучением Вселенной.</p>
+        </section>
+
         <section>
             <h2>Навыки</h2>
             <ul>
                 <li>Работа с данными и статистический анализ</li>
-                <li>Проведение научных экспериментов</li>
-                <li>Написание статей</li>
+                <li>Проведение научных экспериментов и наблюдений</li>
+                <li>Написание научных статей</li>
                 <li>Анализ астрономических данных</li>
-                <li>Работа с телескопами</li>
+                <li>Работа с телескопами и наблюдательным оборудованием</li>
                 <li>Научная коммуникация</li>
             </ul>
         </section>
@@ -123,32 +41,47 @@
         <section>
             <h2>Проекты</h2>
             <ol>
-                <li><strong>Исследование экзопланет</strong> - поиск планет, пригодных для жизни</li>
-                <li><strong>Наблюдение за звёздными скоплениями</strong> - определение возраста скоплений</li>
-                <li><strong>Анализ космического излучения</strong> - влияние солнечной активности</li>
+                <li><strong>Исследование экзопланет в зоне обитаемости</strong> — анализ данных с космического телескопа для поиска планет, пригодных для жизни.</li>
+                <li><strong>Наблюдение за звёздными скоплениями</strong> — определение возраста и эволюции шаровых скоплений Млечного Пути.</li>
+                <li><strong>Анализ космического излучения</strong> — изучение влияния солнечной активности на космические лучи.</li>
             </ol>
         </section>
 
-        <form action="#" method="post">
-            <h2>Форма обратной связи</h2>
-            <div class="form-group">
-                <label for="name">Имя</label>
-                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="example@email.com" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Сообщение</label>
-                <textarea id="message" name="message" placeholder="Введите сообщение" required></textarea>
-            </div>
-            <button type="submit">Отправить</button>
-        </form>
+        <section>
+            <h2>Обратная связь</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Имя:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                </p>
+
+                <p>
+                    <label for="message">Сообщение:</label><br>
+                    <textarea id="message" name="message" rows="4" placeholder="Введите ваше сообщение..." required></textarea>
+                </p>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
     </main>
 
+    <hr>
+
+    <aside>
+        <h3>Область науки</h3>
+        <p><strong>Астрономия</strong></p>
+        <p>Меня вдохновляет изучение Вселенной, тайны чёрных дыр и поиск ответов на вопросы о происхождении космоса.</p>
+    </aside>
+
+    <hr>
+
     <footer>
-        <p>&copy; 2026 Григорьева Карина. Все права защищены.</p>
+        <p>&copy; 2026 Григорьева Карина</p>
     </footer>
 </body>
 </html>
